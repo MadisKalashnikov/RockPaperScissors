@@ -4,10 +4,53 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<script src="./index.js" defer></script>
+	<title>RPS game</title>
+	<link rel="stylesheet" href="./style.css">
+	<script src="./index.js" defer ></script>
 </head>
 <body>
-	
+	<header class="active">
+		<img src="./imgs/rock-paper-scissors-cartoon-banner-with-human-hands-playing-game-showing-fingers-gestures-friends-challenge-competition-decision-strategy-win-people-playing-fun-vector-illustration_107791-8480.webp" alt="">
+	</header>
+	<main class="container">
+		<section class="game-mode active">
+			<h2>Choose your game mode</h2>
+			<div class="div">
+				<button class="btn-mode" data-mode="3">best of 3</button>
+				<button class="btn-mode" data-mode="5">best of 5</button>
+				<button class="btn-mode" data-mode="7">best of 7</button>
+			</div>
+		</section>
+		<section class="game-board">
+			<div class="player-choice">
+				<h2>Player's choice</h2>
+				<img src="./imgs/choices.png" alt="player choice" id="playerChoice">
+				<h2 id="playerScore"></h2>
+			</div>
+			<div class="computer-choice">
+				<h2>Computers's choice</h2>
+				<img src="./imgs/choices.png" alt="computer choice" id="computerChoice">
+				<h2 id="computerScore"></h2>
+			</div>
+		</section>
+		<section class="game-choice">
+			<h2>Choose your weapon!</h2>
+			<div class="div">
+				<button class="btn-choice" data-choice="rock"><img src="./imgs/rock.png" alt=""></button>
+				<button class="btn-choice" data-choice="paper"><img src="./imgs/paper.png" alt=""></button>
+				<button class="btn-choice" data-choice="scissors"><img src="./imgs/scissors.png" alt=""></button>
+			</div>
+		</section>
+		
+		<section class="game-winner">
+			<h2 id="announceWinner"></h2>
+		</section>
+		<section class="game-option">
+			<div class="btns">
+				<button class="btn-option" data-option="new">Choose another mode</button>
+				<button class="btn-option" data-option="reset">Play again</button>
+			</div>
+		</section>
+	</main>
 </body>
 </html>
